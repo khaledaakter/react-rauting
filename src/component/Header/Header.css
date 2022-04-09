@@ -1,0 +1,14 @@
+.nav-container {
+    background-color: rgb(235, 235, 235);
+}
+
+.nav-container-inner {
+    padding: 30px 0 !important;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}

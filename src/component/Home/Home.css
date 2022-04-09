@@ -1,0 +1,65 @@
+.container {
+    max-width: 1200px;
+    padding: 60px 20px;
+    margin: 0 auto;
+}
+
+
+/* banner css */
+
+.top-container-inner {
+    display: flex;
+}
+
+.homeLeftText {
+    width: calc(60% - 20px);
+    text-align: left;
+    padding-right: 20px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    color: #fda92f;
+    margin: 0 0 40px 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    margin: 0 0 20px 0;
+}
+
+.ic-btn {
+    background: linear-gradient(90deg, #fda92f 0%, #f0cc03 100%);
+    /* height: 50px; */
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    padding: 20px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    border: 0;
+    outline: none;
+}
+
+.rightImage {
+    width: 40%;
+}
+
+.rightImage img {
+    max-width: 100%;
+}
+
+/* customer reviews */
+
+.customerReviews {}
+
+.customerReviews h1 {
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+.cardWraper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ededed;
+}
+
+.cardImg {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cardImg img {
+    max-width: 100%;
+}
+
+
+
+.ratting {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    background-color: #000;
+}
+.ratting:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.ratting:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.ratting:not(:checked) > label:before {
+    content: '★ ';
+}
+.ratting > input:checked ~ label {
+    color: #ffc700;    
+}
+.ratting:not(:checked) > label:hover,
+.ratting:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.ratting > input:checked + label:hover,
+.ratting > input:checked + label:hover ~ label,
+.ratting > input:checked ~ label:hover,
+.ratting > input:checked ~ label:hover ~ label,
+.ratting > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
