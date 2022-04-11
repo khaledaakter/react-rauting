@@ -6,13 +6,22 @@
     padding: 30px 0 !important;
 }
 
-@media (max-width: 2000px) {
-    .nav-container-inner {}
-}
+
 
 nav {
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
+}
+
+
+@media (max-width: 575px) {
+    .nav-container-inner {
+        padding: 18px 0 !important;
+    }
+
+    nav {
+        gap: 13px;
+    }
 }

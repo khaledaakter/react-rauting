@@ -38,3 +38,31 @@
     color: #fab125;
     font-size: 23px;
 }
+
+
+@media (max-width: 767px) {
+    .QuestionsItem {
+        margin-bottom: 30px;
+    }
+
+    .QuestionsHeader {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .QuestionsBody p,
+    .QuestionsBody li {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+
+    .QuestionsBody h3 {
+        font-size: 19px;
+    }
+
+    .QuestionsBodyList li::marker {
+        font-size: 19px;
+    }
+
+
+}
