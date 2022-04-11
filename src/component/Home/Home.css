@@ -58,8 +58,21 @@ p {
 
 /* customer reviews */
 
-.customerReviews {}
+
+.customerReviews {
+    background: #f9f9fd;
+}
 
 .customerReviews h1 {
     text-align: center;
+}
+
+.allCustomerReviews {
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.allCustomerReviews .ic-btn {
+    overflow: hidden;
+    display: inline-block;
 }

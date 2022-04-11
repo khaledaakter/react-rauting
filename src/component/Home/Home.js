@@ -1,7 +1,9 @@
 import logo from '../Images/gfcard.png';
 import React from 'react';
 import './Home.css';
-import CustomLink from '../CustomLink/CustomLink'
+import CustomLink from '../CustomLink/CustomLink';
+import Questions from '../Questions/Questions'
+import Review from '../Review/Review';
 
 
 
@@ -30,11 +32,23 @@ const Home = () => {
             <div className="customerReviews">
                 <div className="container">
                     <h1>Customer Reviews</h1>
-                    
 
-                    <CustomLink to="/reviews" className="ic-btn">All Customer Reviews</CustomLink>
+                    <div className="homeReviewsInner">
+                        <Review></Review>
+                    </div>
+
+                    <div className='allCustomerReviews'>
+                        <CustomLink to="/reviews" className="ic-btn">All Customer Reviews</CustomLink>
+                    </div>
 
                 </div>
+            </div>
+
+            <div className="container">
+                <h1>Questions</h1>
+
+                <Questions></Questions>
+
             </div>
         </>
     )

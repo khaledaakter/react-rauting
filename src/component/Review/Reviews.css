@@ -32,7 +32,9 @@
     overflow: hidden;
 }
 
-
+.homeReviewsInner .postContainer:nth-child(n+4) {
+    display: none;
+}
 
 .ratting {
     position: relative;
@@ -43,40 +45,17 @@
     margin: 0 auto;
 }
 
-.ratting:not(:checked)>input {
-    position: absolute;
-    top: -9999px;
+.reviewRatting {
+    color: #000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
 }
 
-.ratting:not(:checked)>label {
-    float: right;
-    width: 25px;
-    height: 25px;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    font-size: 30px;
-    line-height: 20px;
-    color: #ccc;
-}
-
-.ratting:not(:checked)>label:before {
-    content: '★ ';
-}
-
-.ratting>input:checked~label {
+.reviewRatting span {
     color: #ffc700;
-}
-
-.ratting:not(:checked)>label:hover,
-.ratting:not(:checked)>label:hover~label {
-    color: #deb217;
-}
-
-.ratting>input:checked+label:hover,
-.ratting>input:checked+label:hover~label,
-.ratting>input:checked~label:hover,
-.ratting>input:checked~label:hover~label,
-.ratting>label:hover~input:checked~label {
-    color: #c59b08;
+    font-size: 25px;
+    line-height: 25px;
 }
